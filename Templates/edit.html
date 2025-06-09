@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Ship</title>
+</head>
+<body>
+    <h1>Edit Ship</h1>
+    <form method="post">
+        Name: <input type="text" name="name" value="{{ ship.name }}" required><br>
+        Last Maintenance (YYYY-MM-DD): <input type="date" name="last_maintenance" value="{{ ship.last_maintenance }}" required><br>
+        Ship Type: <input type="text" name="ship_type" value="{{ ship.ship_type }}" required><br>
+        Capacity (tons): <input type="number" name="capacity" value="{{ ship.capacity }}" required><br>
+        <input type="submit" value="Update Ship">
+    </form>
+</body>
+</html>
